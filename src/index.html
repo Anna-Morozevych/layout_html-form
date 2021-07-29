@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1></h1>
     <script type="text/javascript" src="./main.js"></script>
     <form onsubmit="onSubmit()">
       <fieldset>
@@ -35,6 +34,8 @@
           <input
           type="number"
           value="12"
+          min="0"
+          max="100"
           name="age">
         </div>
 
@@ -46,7 +47,7 @@
         </div>
 
         <div>
-          <label for="agreement">I accept the form of the agreement:</label>
+          <label for="agreement">I accept the term of the agreement</label>
           <input
           type="checkbox"
           name="agree"
@@ -83,13 +84,16 @@
           <input
           type="radio"
           name="love-cats"
-          value="y">
+          value="y"
+          id="yes">
+          <label for="yes">Yes</label>
 
           <input
           type="radio"
           name="love-cats"
-          value="n">
-
+          value="n"
+          id="no">
+          <label for="no">No</label>
         </div>
 
         <div>
